@@ -1,0 +1,88 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    background-color: #f2f2f2; /* Optional background color */
+    margin: 0;
+}
+
+.container {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Use 100vh for full viewport height */
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 300px; /* Adjust width as needed */
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.signup {
+    background-color: #4CAF50; /* Green */
+    color: #fff;
+}
+
+.signin {
+    background-color: #2196F3; /* Blue */
+    color: #fff;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+/* Gradient background, shadow, and hover animation */
+.signup {
+    background: linear-gradient(to right, #4CAF50 0%, #2196F3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .signup:hover {
+    transform: scale(1.05);
+  }
+  .signin {
+    background: linear-gradient(to right, #4CAF50 0%, #2196F3 100%);
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .signin:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+    .buttons {
+      width: 100%;
+      flex-direction: column;
+    }
+    button {
+      margin-bottom: 10px;
+    }
+  }
+  
